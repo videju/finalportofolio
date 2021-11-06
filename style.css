@@ -73,7 +73,7 @@ section .title::before {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: var(--secondary-color);
     transform: translateX(-50%)
 }
 
@@ -84,7 +84,7 @@ section .title::after {
     font-size: 20px;
     color: crimson;
     padding: 0 5px;
-    background: #fff;
+    background: var(--primary-color);
     transform: translateX(-50%)
 }
 
@@ -109,7 +109,7 @@ section .title::after {
 }
 
 .navbar .logo a {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 35px;
     font-weight: 600
 }
@@ -120,7 +120,7 @@ section .title::after {
 }
 
 .navbar.sticky .logo a span {
-    color: #fff
+    color: var(--primary-color);
 }
 
 .navbar .menu li {
@@ -130,7 +130,7 @@ section .title::after {
 
 .navbar .menu li a {
     display: block;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -142,11 +142,11 @@ section .title::after {
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #fff
+    color: var(--primary-color);
 }
 
 .menu-btn {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 23px;
     cursor: pointer;
     display: none
@@ -161,7 +161,7 @@ section .title::after {
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: var(--primary-color);
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -186,7 +186,7 @@ section .title::after {
     display: flex;
     background: url(ocean-3605547__480.jpg) no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: var(--primary-color);
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -225,7 +225,7 @@ section .title::after {
 .home .home-content a {
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -276,7 +276,7 @@ section .title::after {
 .about .about-content .right a {
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -288,29 +288,29 @@ section .title::after {
 
 .about .about-content .right a:hover {
     color: crimson;
-    background: 0 0
+    background: 0 0;
 }
 
 .services,
 .teams {
-    color: #fff;
-    background: #111
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .services .title::before,
 .teams .title::before {
-    background: #fff
+    background: var(--primary-color)
 }
 
 .services .title::after,
 .teams .title::after {
-    background: #111;
+    background: var(--secondary-color);
     content: "what i provide"
 }
 
 .services .serv-content .card {
     width: calc(33% - 20px);
-    background: #222;
+    background: var(--secondary-color);
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -337,7 +337,7 @@ section .title::after {
 }
 
 .services .serv-content .card:hover i {
-    color: #fff
+    color: var(--primary-color)
 }
 
 .services .serv-content .card .text {
@@ -367,7 +367,7 @@ section .title::after {
 .skills .skills-content .left a {
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -401,7 +401,7 @@ section .title::after {
 .skills .skills-content .right .line {
     height: 5px;
     width: 100%;
-    background: lightgrey;
+    background: var(--primary-color);
     position: relative
 }
 
@@ -439,7 +439,7 @@ section .title::after {
 }
 
 .teams .carousel .card {
-    background: #222;
+    background: var(--secondary-color);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -479,7 +479,7 @@ section .title::after {
 }
 
 .teams .carousel .card:hover img {
-    border-color: #fff
+    border-color: var(--primary-color);
 }
 
 .owl-dots {
@@ -549,7 +549,7 @@ section .title::after {
 }
 
 .contact .contact-content .info .sub-title {
-    color: #333
+    color: var(--secondary-color)
 }
 
 .contact .right form .fields {
@@ -587,7 +587,7 @@ section .title::after {
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
-    border-color: #b3b3b3
+    border-color: var(--primary-color)
 }
 
 .contact .right form .textarea textarea {
@@ -601,7 +601,7 @@ section .title::after {
 }
 
 .right form .button-area button {
-    color: #fff;
+    color: var(--primary-color);
     display: block;
     width: 160px !important;
     height: 45px;
@@ -622,9 +622,9 @@ section .title::after {
 }
 
 footer {
-    background: #111;
+    background: var(--secondary-color);
     padding: 15px 23px;
-    color: #fff;
+    color: var(--primary-color);
     text-align: center
 }
 
@@ -666,7 +666,7 @@ footer span a:hover {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: var(--secondary-color);
         text-align: center;
         padding-top: 80px;
         transition: all .3s ease
@@ -786,4 +786,23 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px
     }
+}
+.logo{
+    max-width:100%;
+    width:66px;
+}
+#icon{
+    width: 75px;
+    cursor:pointer;
+    margin-left:84px;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
 }
